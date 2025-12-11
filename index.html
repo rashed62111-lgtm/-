@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محل علي عيد لمواد البناء</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">محل علي عيد</h1>
+            <p class="subtitle">مواد البناء</p>
+        </header>
+
+        <nav class="admin-link">
+            <a href="admin.html" class="admin-btn">لوحة الإدارة</a>
+        </nav>
+
+        <main>
+            <section class="welcome-section">
+                <h2>مرحباً بكم في محل علي عيد</h2>
+                <p>نحن هنا لخدمتكم. يمكنكم التواصل معنا من خلال النماذج التالية:</p>
+            </section>
+
+            <div class="forms-container">
+                <!-- نموذج الشكوى -->
+                <div class="form-card">
+                    <h3>📝 تقديم شكوى</h3>
+                    <form id="complaintForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="complaintName">الاسم:</label>
+                            <input type="text" id="complaintName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="complaintEmail">البريد الإلكتروني:</label>
+                            <input type="email" id="complaintEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="complaintPhone">رقم الهاتف:</label>
+                            <input type="tel" id="complaintPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="complaintMessage">تفاصيل الشكوى:</label>
+                            <textarea id="complaintMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الشكوى</button>
+                    </form>
+                </div>
+
+                <!-- نموذج الدعم الفني -->
+                <div class="form-card">
+                    <h3>🔧 طلب دعم فني</h3>
+                    <form id="supportForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="supportName">الاسم:</label>
+                            <input type="text" id="supportName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="supportEmail">البريد الإلكتروني:</label>
+                            <input type="email" id="supportEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="supportPhone">رقم الهاتف:</label>
+                            <input type="tel" id="supportPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="supportMessage">وصف المشكلة:</label>
+                            <textarea id="supportMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال طلب الدعم</button>
+                    </form>
+                </div>
+
+                <!-- نموذج النصيحة -->
+                <div class="form-card">
+                    <h3>💡 تقديم نصيحة</h3>
+                    <form id="suggestionForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="suggestionName">الاسم:</label>
+                            <input type="text" id="suggestionName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="suggestionEmail">البريد الإلكتروني:</label>
+                            <input type="email" id="suggestionEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="suggestionPhone">رقم الهاتف:</label>
+                            <input type="tel" id="suggestionPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="suggestionMessage">النصيحة:</label>
+                            <textarea id="suggestionMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال النصيحة</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 محل علي عيد لمواد البناء. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
